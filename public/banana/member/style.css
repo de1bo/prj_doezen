@@ -42,3 +42,10 @@ button{
 	height: 50px;
 	font-size: 30px;
 }
+
+input[type=checkbox], input[type=radio] {
+
+zoom: 1.5;
+
+}
+
