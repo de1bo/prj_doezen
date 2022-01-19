@@ -71,7 +71,39 @@
 						</tr>
 						<tr>
 							<th class="table-active">이메일</th>
-							<td colspan="3">@naver.com</td>
+							<td colspan="3">
+							@naver.com
+							<button type="button" class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@mdo">send</button>
+							<!-- modal -->
+							<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+								        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								      </div>
+								      <div class="modal-body">
+								        <form>
+								          <div class="mb-3">
+								            <label for="recipient-name" class="col-form-label">보낼사람:</label>
+								            <input type="text" class="form-control" id="recipient-name">
+								          </div>
+								          <div class="mb-3">
+								            <label for="message-text" class="col-form-label">Message:</label>
+								            <textarea class="form-control" id="message-text"></textarea>
+								          </div>
+								        </form>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								        <button type="button" class="btn btn-primary">Send message</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							  <!-- end -->
+							</div>
+							</td>
 						</tr>
 						<tr>
 							<th class="table-active">모바일</th>
@@ -87,7 +119,15 @@
 						</tr>
 
 						<th class="table-active">취미</th>
-						<td colspan="3">코딩, 노래, 게임</td>
+						<td colspan="3" >
+							<input type="checkbox" class="btn-check" id="btn-check-outlined"  checked disabled >
+							<label class="btn btn-outline-primary" for="btn-check-outlined" ><img src="./img/coding48.png" alt=""  style="width: 30%;">코딩</label>
+							<input type="checkbox" class="btn-check" id="btn-check-outlined2" disabled >
+							<label class="btn btn-outline-primary" for="btn-check-outlined2"><img src="./img/swimming48.png" alt="" style="width: 30%;">수영</label>
+							<input type="checkbox" class="btn-check" id="btn-check-outlined3" checked disabled >
+							<label class="btn btn-outline-primary" for="btn-check-outlined3"><img src="./img/game48.png" alt="" style="width: 30%;">게임</label>
+							<input type="checkbox" class="btn-check" id="btn-check-outlined4" checked disabled>
+							<label class="btn btn-outline-primary" for="btn-check-outlined4"><img src="./img/song48.png" alt="" style="width: 30%;">노래</label></td>
 						</tr>
 						<tr>
 							<th class="table-active">좋아하는 색깔</th>
@@ -244,6 +284,25 @@ var myInput = document.getElementById('myInput')
 
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
+})
+
+</script>
+<script>
+var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var recipient = button.getAttribute('data-bs-whatever')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = exampleModal.querySelector('.modal-title')
+  var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+  modalTitle.textContent = 'New message to ' + recipient
+  modalBodyInput.value = recipient
 })
 </script>
 	<script

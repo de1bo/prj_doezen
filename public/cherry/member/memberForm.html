@@ -9,6 +9,7 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
+
 <title>김도현1 html projects</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
 					<table class="table table-bordered">
 
 						<tr>
-							<th><div class="mb-3">
+							<th colspan="4"><div class="mb-3">
 									<label for="formFile" class="form-label">Default file
 										input example</label> <input class="form-control" type="file"
 										id="formFile">
@@ -40,64 +41,149 @@
 						</tr>
 						<tr>
 							<th class="table-active" width="20%">홈페이지</th>
-							<td width="30%"v>www.naver.com</td>
+							<td width="30%"><input type="text" class="form-control"
+								placeholder="" aria-label=""></td>
 							<th class="table-active" width="20%">직업(희망)</th>
-							<td colspan="2" width="30%">안드로이드 앱 개발자</td>
+							<td colspan="2" width="30%"><input type="text"
+								class="form-control" placeholder="" aria-label=""></td>
 						</tr>
 						<tr>
 							<th class="table-active" width="120px">이름</th>
 							<td width="120px"><div class="row">
-  <div class="col">
-    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-  </div>
-  <div class="col">
-    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-  </div>
-</div></td>
+									<div class="col">
+										<input type="text" class="form-control" placeholder="name"
+											aria-label="name">
+									</div>
+								</div></td>
 							<th class="table-active">아이디</th>
-							<td>kimdohyun</td>
+							<td><input type="text" class="form-control" placeholder=""
+								aria-label=""></td>
 						</tr>
 						<tr>
 							<th class="table-active">비밀번호</th>
 							<td><div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
-</div></td>
+									<input type="password" class="form-control"
+										id="floatingPassword" placeholder="Password"> <label
+										for="floatingPassword">Password</label>
+								</div></td>
 							<th class="table-active">성별</th>
-							<td>남</td>
+							<td><input type="radio" class="btn-check" name="options1"
+								id="option1" autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option1">남</label> <input
+								type="radio" class="btn-check" name="options1" id="option2"
+								autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option2">녀</label></td>
 						</tr>
 						<tr>
 							<th class="table-active">생일</th>
-							<td>981014</td>
+							<td><input type="date" id="" name="" class="form-control"></td>
 							<th class="table-active">국적</th>
-							<td>대한민국</td>
+							<td><input class="form-control" list="datalistOptions"
+								id="exampleDataList" placeholder="where are you from?">
+								<datalist id="datalistOptions">
+									<option value="중국">
+									<option value="미국">
+									<option value="영국">
+									<option value="대한민국">
+									<option value="일본">
+								</datalist></td>
 						</tr>
 						<tr>
 							<th class="table-active">주소</th>
-							<td colspan="3">경기도 광명시</td>
+							<td colspan="3"><div class="input-group mb-3"
+									style="width: 60%">
+									<input type="text" class="form-control" placeholder=""
+										aria-label="Recipient's username"
+										aria-describedby="button-addon2">
+									<button class="btn btn-outline-secondary" type="button"
+										id="button-addon2" data-bs-toggle="modal"
+										data-bs-target="#exampleModal">검색하기</button>
+
+									<div class="modal fade" id="exampleModal" tabindex="-1"
+										aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLabel">주소검색</h5>
+													<button type="button" class="btn-close"
+														data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<!-- 내부 -->
+													<div class="input-group mb-3">
+														<input type="text" class="form-control"
+															placeholder="예) 판교역로 235, 한남동 714"
+															aria-label="Recipient's username"
+															aria-describedby="button-addon2">
+														<button class="btn btn-outline-secondary" type="button"
+															id="button-addon2">Search</button>
+													</div>
+													<br>
+													<br>
+													<br>
+													<h5>
+														<strong>Tip</strong>
+													</h5>
+													<p>도로명이나 지역명을 이용해서 검색해 보세요. 건물번호, 번지를 함께 입력하시면 더욱 정확한
+														결과가 검색됩니다.</p>
+													<!-- 외부 -->
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary"
+														data-bs-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save
+														changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div></td>
 
 						</tr>
 						<tr>
 							<th class="table-active">전화번호</th>
-							<td>02123456</td>
+							<td><input type="text" id="phoneNum" class="form-control"
+								placeholder="" aria-label=""></td>
 							<th class="table-active">팩스번호</th>
-							<td>02123456</td>
+							<td><input type="text" id="phoneNum" class="form-control"
+								placeholder="" aria-label=""></td>
 						</tr>
 						<tr>
 							<th class="table-active">이메일</th>
-							<td colspan="3"><div class="input-group mb-3">
-									<input type="text" class="form-control"
-										placeholder="Recipient's username"
-										aria-label="Recipient's username"
-										aria-describedby="basic-addon2"> <span
-										class="input-group-text" id="basic-addon2">@example.com</span>
-								</div></td>
+							<td colspan="3" >
+							
+							<div class="row g-2">
+									<div class="col-md">
+										<div class="form-floating">
+											<input type="email" class="form-control"
+												id="floatingInputGrid" placeholder="name@example.com">
+											<label for="floatingInputGrid">Email address</label>
+										</div>
+									</div>
+
+									
+									<div class="col-md" >
+										<div class="form-floating">
+											<select class="form-select" id="floatingSelectGrid"
+												aria-label="Floating label select example">
+												<option selected></option>
+												<option value="1">@naver.com</option>
+												<option value="2">@daum.com</option>
+												<option value="3">@gmail.com</option>
+											</select> 
+								</div></div></td>
 						</tr>
 						<tr>
 							<th class="table-active">모바일</th>
-							<td>010123456</td>
+							<td><input type="text" id="phoneNum" class="form-control"
+								placeholder="" aria-label=""></td>
 							<th class="table-active">비밀번호 문제</th>
-							<td>dsfks</td>
+							<td><select id="" name="select" class="form-control">
+									<option value="">나의 고향은
+									<option value="">내가 나온 초등학교는
+									<option value="">내가 다니는 학교는
+									<option value="">내가 사는 동네는
+							</select></td>
 						</tr>
 						<tr>
 							<th class="table-active">비밀번호 답</th>
@@ -108,43 +194,70 @@
 									</div>
 								</div></td>
 							<th class="table-active">SNS</th>
-							<td>facebook</td>
+							<td>
+								<select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+									<option selected>SNS선택</option>
+									<option value="1">페이스북</option>
+									<option value="2">인스타그램</option>
+									<option value="3">트위터</option>
+								</select>
+							</td>
 						</tr>
 
 						<th class="table-active">취미</th>
 						<td colspan="3">
-						<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-<label class="btn btn-outline-primary" for="btn-check-outlined">코딩</label>
-<input type="checkbox" class="btn-check" id="btn-check-outlined2">
-<label class="btn btn-outline-primary" for="btn-check-outlined2">수영</label>
-<input type="checkbox" class="btn-check" id="btn-check-outlined3" >
-<label class="btn btn-outline-primary" for="btn-check-outlined3">게임</label>
-<input type="checkbox" class="btn-check" id="btn-check-outlined4" >
-<label class="btn btn-outline-primary" for="btn-check-outlined4">노래</label>
+							<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+							
+							<label class="btn btn-outline-primary" for="btn-check-outlined"><img src="./img/coding48.png" alt="">코딩</label>
+							<input type="checkbox" class="btn-check" id="btn-check-outlined2">
+							<label class="btn btn-outline-primary" for="btn-check-outlined2"><img src="./img/swimming48.png" alt="">수영</label>
+							<input type="checkbox" class="btn-check" id="btn-check-outlined3">
+							<label class="btn btn-outline-primary" for="btn-check-outlined3"><img src="./img/game48.png" alt="">게임</label>
+							<input type="checkbox" class="btn-check" id="btn-check-outlined4">
+							<label class="btn btn-outline-primary" for="btn-check-outlined4"><img src="./img/song48.png" alt="">노래</label>
 						</td>
 						</tr>
 						<tr>
 							<th class="table-active">좋아하는 색깔</th>
-							<td colspan="3">검정 #000000</td>
+							<td colspan="3">
+								<div class="input-group mb-3" style="width: 30%">
+									<input type="color" id="basic-addon1" name="color"> <input
+										type="text" id="" name="" class="form-control" placeholder=""
+										aria-label="Username" aria-describedby="basic-addon1">
+							</td>
 						</tr>
 						<tr>
 							<th class="table-active">결혼여부</th>
-							<td>미혼</td>
+							<td>
+							<input type="radio" class="btn-check" name="options2" id="option3" autocomplete="off"> 
+							<label class="btn btn-outline-primary" for="option3">기혼</label>
+								<input
+								type="radio" class="btn-check" name="options2" id="option4"
+								autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option4">미혼</label></td>
 							<th class="table-active">추천인</th>
-							<td>김도현</td>
+							<td><input type="text" class="form-control" placeholder=""
+								aria-label=""></td>
 						</tr>
 						<tr>
 							<th class="table-active">결혼기념일</th>
-							<td>x</td>
+							<td><input type="date" id="" name="" class="form-control"></td>
 							<th class="table-active">자녀유무</th>
-							<td>미혼</td>
+							<td><input type="radio" class="btn-check" name="options3"
+								id="option5" autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option5">유</label> <input
+								type="radio" class="btn-check" name="options3" id="option6"
+								autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option6">무</label></td>
 						</tr>
 						<tr>
 							<th class="table-active" height="100px">자기소개</th>
 							<td colspan="3"><div class="form-floating">
-  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-  <label for="floatingTextarea2"></label>
-</div></td>
+									<textarea class="form-control"
+										placeholder="Leave a comment here" id="floatingTextarea2"
+										style="height: 100px"></textarea>
+									<label for="floatingTextarea2"></label>
+								</div></td>
 						</tr>
 					</table>
 				</div>
@@ -167,15 +280,34 @@
 
 						<tr>
 							<th>모바일 마케팅 수신 동의</th>
-							<td colspan="3" align="center">동의</td>
+							<td colspan="3" align="center"><input type="radio" class="btn-check" name="options4"
+								id="option7" autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option7">동의</label> <input
+								type="radio" class="btn-check" name="options4" id="option8"
+								autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option8">거부</label></td>
 						</tr>
 						<tr>
 							<th>이메일 마케팅 수신 동의</th>
-							<td colspan="3" align="center">동의</td>
+							<td colspan="3" align="center"><input type="radio" class="btn-check" name="options5"
+								id="option9" autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option9">동의</label> <input
+								type="radio" class="btn-check" name="options5" id="option10"
+								autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option10">거부</label></td>
 						</tr>
 						<tr>
 							<th>개인정보 유효 기간</th>
-							<td colspan="3" align="center">1년</td>
+							<td colspan="3" align="center">
+							<input type="radio" class="btn-check" name="options6" id="option11" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option11">1년</label> 
+							<input type="radio" class="btn-check" name="options6" id="option12" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option12">3년</label> 
+							<input type="radio" class="btn-check" name="options6" id="option13" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option13">5년</label> 
+							<input type="radio" class="btn-check" name="options6" id="option14" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option14">10년</label> 
+							</td>
 						</tr>
 					</table>
 				</div>
@@ -196,36 +328,82 @@
 				<div class="accordion-body">
 					<table class="table table-bordered" style="text-align: center;">
 						<tr>
-							<th width="50px">번호</th>
-							<th>프로젝트명</th>
-							<th width="170px">참여기간</th>
-							<th>역할</th>
-							<th width="70px">발주사</th>
+							<th class="table-active" width="50px">번호</th>
+							<th class="table-active" width="20%">프로젝트명</th>
+							<th class="table-active">참여기간</th>
+							<th class="table-active" width="30%">역할</th>
+							<th class="table-active" width="10%">발주사</th>
 						</tr>
 						<tr>
 							<td>1</td>
-							<td>카풀</td>
-							<td>2017-05-17~2017-12-24</td>
-							<td>서버 구축</td>
-							<td>EZEN</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+								</div>
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
 						</tr>
 						<td>2</td>
-						<td>모바일 방범앱</td>
-						<td>2018-05-18~2018-11-25</td>
-						<td>전화번호부 데이터 베이스 구축, 푸쉬알림, 입력 폼 구축</td>
-						<td>EZEN</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+								</div>
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
 						</tr>
+						<tr>
 						<td>3</td>
-						<td>Do-cat</td>
-						<td>2021-07-17~2021-11-5</td>
-						<td>splash 이미지, 전반적 로직 구현</td>
-						<td>EZEN</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+								</div>
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
 						</tr>
+						<tr>
 						<td>4</td>
-						<td>Do-talk</td>
-						<td>2021-12-5~2022-01-10</td>
-						<td>splash, google, kakao 로그인 연동, socat통신</td>
-						<td>EZEN</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<div class="input-group mb-3">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+									<input type="date" id="" name="" class="form-control" style="width: 50%">
+								</div>
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
+							<td>
+								<input type="text" id="phoneNum" class="form-control" placeholder="" aria-label="">
+							</td>
 						</tr>
 					</table>
 				</div>
@@ -244,13 +422,53 @@
 
 	<button type="button" class="btn btn-dark"
 		onclick="location.href='memberList.html'">목록</button>
-	<button type="button" class="btn btn-dark"
-		onclick="location.href='memberEdit.html'">수정</button>
-	<button type="button" class="btn btn-dark"
-		onclick="location.href='memberList.html'">삭제</button>
 
+	<script>
+		var myModal = document.getElementById('myModal')
+		var myInput = document.getElementById('myInput')
 
+		myModal.addEventListener('shown.bs.modal', function() {
+			myInput.focus()
+		})
+	</script>
+	<script>
+		var autoHypenPhone = function(str) {
+			str = str.replace(/[^0-9]/g, '');
+			var tmp = '';
+			if (str.length < 4) {
+				return str;
+			} else if (str.length < 7) {
+				tmp += str.substr(0, 3);
+				tmp += '-';
+				tmp += str.substr(3);
+				return tmp;
+			} else if (str.length < 11) {
+				tmp += str.substr(0, 3);
+				tmp += '-';
+				tmp += str.substr(3, 3);
+				tmp += '-';
+				tmp += str.substr(6);
+				return tmp;
+			} else {
+				tmp += str.substr(0, 3);
+				tmp += '-';
+				tmp += str.substr(3, 4);
+				tmp += '-';
+				tmp += str.substr(7);
+				return tmp;
+			}
 
+			return str;
+		}
+		s
+
+		var phoneNum = document.getElementById('phoneNum');
+
+		phoneNum.onkeyup = function() {
+			console.log(this.value);
+			this.value = autoHypenPhone(this.value);
+		}
+	</script>
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
