@@ -1,0 +1,17 @@
+@font-face {
+		src: url("../fonts/jalnan.ttf");
+		font-family: "jal";
+}
+     #jal {
+	font-family: "jal";
+}
+
+#float-left{
+		float: left;
+}
+
+.img-border{
+    padding: 0;
+	border: none;
+	background: none;
+      }
