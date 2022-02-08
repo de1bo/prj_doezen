@@ -22,7 +22,7 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Accordion Item #1
+        개인정보
       </button>
     </h2>
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -81,25 +81,19 @@
 	          	<div class="input-group">
 	          		<input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
 					<button class="btn btn-outline-secondary" type="button" id="button-addon2" data-bs-toggle="modal" data-bs-target="#exampleModal">검색하기</button>
-					<div class="modal fade" id="exampleModal" tabindex="-1"
-										aria-labelledby="exampleModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLabel">주소검색</h5>
-													<button type="button" class="btn-close"
-														data-bs-dismiss="modal" aria-label="Close"></button>
-												</div>
-												<div class="modal-body">
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">주소검색</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
 													<!-- 내부 -->
-													<div class="input-group mb-3">
-														<input type="text" class="form-control"
-															placeholder="예) 판교역로 235, 한남동 714"
-															aria-label="Recipient's username"
-															aria-describedby="button-addon2">
-														<button class="btn btn-outline-secondary" type="button"
-															id="button-addon2">Search</button>
-													</div>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control" placeholder="예) 판교역로 235, 한남동 714" aria-label="Recipient's username" aria-describedby="button-addon2">
+										<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+									</div>
 													<br>
 													<br>
 													<br>
@@ -121,10 +115,10 @@
 									</div>
 					</div>
 					<div class="col-md-6">
-					<input type="text" class="form-control" placeholder="상세주소">
-	          	</div>
-               <label for="email" class="form-label">이메일</label>
-               <div class="input-group mb-6">
+						<input type="text" class="form-control" placeholder="상세주소">
+	          		</div>
+               			<label for="email" class="form-label">이메일</label>
+             	 <div class="input-group mb-6">
 				  	<input type="text" class="form-control" aria-label="Text input with dropdown button">
   						<select class="form-select" id="inputGroupSelect01">
 						    <option selected>Choose...</option>
@@ -166,12 +160,45 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        Accordion Item #2
+        약관 동의
       </button>
     </h2>
     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
       <div class="accordion-body">
-        
+        <table class="table table-bordered">
+
+						<tr>
+							<th>모바일 마케팅 수신 동의</th>
+							<td colspan="3" align="center"><input type="radio" class="btn-check" name="options4"
+								id="option7" autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option7">동의</label> <input
+								type="radio" class="btn-check" name="options4" id="option8"
+								autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option8">거부</label></td>
+						</tr>
+						<tr>
+							<th>이메일 마케팅 수신 동의</th>
+							<td colspan="3" align="center"><input type="radio" class="btn-check" name="options5"
+								id="option9" autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option9">동의</label> <input
+								type="radio" class="btn-check" name="options5" id="option10"
+								autocomplete="off"> <label
+								class="btn btn-outline-primary" for="option10">거부</label></td>
+						</tr>
+						<tr>
+							<th>개인정보 유효 기간</th>
+							<td colspan="3" align="center">
+							<input type="radio" class="btn-check" name="options6" id="option11" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option11">1년</label> 
+							<input type="radio" class="btn-check" name="options6" id="option12" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option12">3년</label> 
+							<input type="radio" class="btn-check" name="options6" id="option13" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option13">5년</label> 
+							<input type="radio" class="btn-check" name="options6" id="option14" autocomplete="off">
+							<label class="btn btn-outline-primary" for="option14">10년</label> 
+							</td>
+						</tr>
+					</table>
 
       </div>
     </div>

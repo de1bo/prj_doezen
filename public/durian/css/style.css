@@ -9,7 +9,9 @@
 #float-left{
 		float: left;
 }
-
+#ct{
+	text-align: center;
+}
 .img-border{
     padding: 0;
 	border: none;
