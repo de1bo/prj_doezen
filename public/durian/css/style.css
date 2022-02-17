@@ -5,6 +5,9 @@
      #jal {
 	font-family: "jal";
 }
+#text-center {
+	text-align: center;
+}
 
 #float-left{
 		float: left;
@@ -40,6 +43,13 @@
   transition: 0.5s ease;
   z-index: 1;
   background-color: #eee;
+}
+.header-img {
+	background-image: url("../images/floot.jpg");
+	width: 100%;
+	height: 40vh;
+	background-repeat : no-repeat;
+        background-size : cover;
 }
 
 .burger-icon {
