@@ -13,12 +13,42 @@
 	body {
 		padding: 10%;
 	}
-	.list-img {
-		width: 300px;
-		height: 340px;
+	#header{
+		width: 100%;
+		height: 30%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+	}
+	#content{
+		  background-color: blue;  
+		width: 70%;
+		height: 600px;
+		float: left;
+	}
+	#aside{
+		background-color: yellow;
+		width: 30%;
+		height: 600px;
+	}
+	
+	.MenuItem{
+		webkit-flex-direction: row;
+		webkit-box-direction: normal;
+		webkit-box-orient: horizontal;
+		border-bottom: 1px solid #e9e9e9;
+		margin-bottom: 4px;
+		display: -webkit-flex;	
+	}
+	.Restaurant_Menu {
+    flex: 1;
+    display: inline-block;
+    margin-right: 30px;
+    white-space: normal;
+	}
+	.Restaurant_MenuPrice {
+    margin-left: auto;
 	}
 </style>
-<header>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="../../images/place-setting.svg" height="45" width="45"></a>
@@ -48,14 +78,81 @@
             <a class="nav-link" href="#"><h5>고객센터</h5></a>
           </li>
         </ul>
-        
       </div>
     </div>
   </nav>
-</header>
 <body>
-	<img src="../../images/trash-icon.png" class="img-thumbnail list-img" alt="...">
-	<img src="../../images/trash-icon.png" class="img-thumbnail list-img" alt="...">
+<div id="header">
+	<div class="container px-4">
+	  <div class="row gx-5">
+	    <div class="col">
+	      <div class="p-3"><img src="../../images/trash-icon.png" class="img-thumbnail list-img" alt="..."></div>
+	    </div>
+	    <div class="col">
+	      <div class="p-3"><img src="../../images/trash-icon.png" class="img-thumbnail list-img" alt="..."></div>
+	    </div>
+	    <div class="col">
+	      <div class="p-3"><img src="../../images/trash-icon.png" class="img-thumbnail list-img" alt="..."></div>
+	    </div>
+	    <div class="col">
+	      <div class="p-3"><img src="../../images/trash-icon.png" class="img-thumbnail list-img" alt="..."></div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<div class="container row g-2">
+	<div class="col-6" id="content" >
+		<div class="col-md-6">
+		<h3><strong>릴하우스</strong></h3>
+		
+		<hr>
+		<table>
+			<tr>
+				<th>주소:   </th>
+				<td>서울특별시 영등포구 영등포로62길 10-1</td>
+			</tr>
+			<tr>
+				<th>전화번호:   </th>
+				<td>010-5395-1151</td>
+			</tr>
+			<tr>
+				<th>음식 종류   </th>
+				<td>정통 중식 / 일반 중식</td>
+			</tr>
+			<tr>
+				<th>영업시간   </th>
+				<td>정통 중식 / 일반 중식</td>
+			</tr>
+			<tr>
+				<th>휴일   </th>
+				<td>정통 중식 / 일반 중식</td>
+			</tr>
+			<tr>
+				<th>메뉴</th>
+				<td>
+					<li class="MenuItem">
+						<span class="Restaurant_Menu">에스프레소</span>
+						<span class="Restaurant_MenuPrice">4,500원</span>
+					</li>
+					<li class="MenuItem">
+						<span class="Restaurant_Menu">에스프레소</span>
+						<span class="Restaurant_MenuPrice">4,500원</span>
+					</li>
+					<li class="MenuItem">
+						<span class="Restaurant_Menu">에스프레소</span>
+						<span class="Restaurant_MenuPrice">4,500원</span>
+					</li>
+				</td>
+			</tr>
+		</table>
+</div>	
+<div class="col-6" id="aside" >
+	
+		</div>
+		</div>
+		</div>
+	
 
 
 
