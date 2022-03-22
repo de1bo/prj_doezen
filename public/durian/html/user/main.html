@@ -277,6 +277,7 @@ function initMap() {
 		position: new google.maps.LatLng(pos),
 		title: 'Some location'
 	});
+	
 	var circle = new google.maps.Circle({
 		  map: map,
 		  radius: 500,    // 10 miles in metres
@@ -358,7 +359,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
-//위도경도 거리계산식
+//위도경도 거리계산식		(현재 위도, 현재 경도, 상대 위도, 상대 경도)
 function getDistanceFromLatLonInKm(lat1,lng1,lat2,lng2) {
 	
 	function deg2rad(deg) {
@@ -370,7 +371,7 @@ function getDistanceFromLatLonInKm(lat1,lng1,lat2,lng2) {
 	var dLon = deg2rad(lng2-lng1);
 	var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.sin(dLon/2) * Math.sin(dLon/2);
 	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-	var d = R * c * 1000; // Distance in m
+	var d = R * c * 1000; // Distance in meters
 	return d;
 	}
 
